@@ -1,161 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurora Eco Clean Tech | Licensed Cleaning Services</title>
-    <style>
-        :root {
-            --verde-logo: #1b5e20;
-            --lavanda-suave: #e1bee7;
-            --blanco-puro: #ffffff;
-            --gris-texto: #424242;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            color: var(--gris-texto);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, #f5f5f5 0%, var(--lavanda-suave) 100%);
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .badge-licensed {
-            background: var(--verde-logo);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            display: inline-block;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .logo-placeholder {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: var(--verde-logo);
-            margin-bottom: 10px;
-        }
-
-        h1 { margin: 0; color: var(--verde-logo); font-size: 2.5em; }
-        p.subtitle { font-size: 1.2em; color: #666; }
-
-        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-            border-bottom: 4px solid var(--verde-logo);
-        }
-
-        .card h3 { color: var(--verde-logo); }
-
-        .contact-box {
-            background: #f9f9f9;
-            padding: 40px;
-            border-radius: 20px;
-            margin-top: 60px;
-            text-align: center;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--verde-logo);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.3s;
-        }
-
-        .btn:hover { transform: scale(1.05); }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.9em;
-            color: #999;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Aurora Eco Clean Tech</title>
+    <style>
+        :root { --primary: #1b5e20; --accent: #81c784; --text: #333; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #fdfdfd; color: var(--text); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .container { background: white; max-width: 500px; width: 100%; padding: 40px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; }
+        .logo-text { font-size: 1.8em; font-weight: bold; color: var(--primary); letter-spacing: -1px; margin-bottom: 5px; }
+        .badge { background: #e8f5e9; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8em; font-weight: bold; display: inline-block; margin-bottom: 20px; }
+        .services { text-align: left; background: #fafafa; padding: 20px; border-radius: 15px; margin: 20px 0; }
+        .services ul { list-style: none; padding: 0; margin: 0; }
+        .services li { margin-bottom: 10px; font-size: 0.95em; display: flex; align-items: center; }
+        .services li::before { content: '✓'; color: var(--primary); margin-right: 10px; font-weight: bold; }
+        .btn-whatsapp { display: block; background: #25D366; color: white; padding: 18px; text-decoration: none; border-radius: 15px; font-weight: bold; font-size: 1.1em; transition: 0.3s; margin-top: 25px; }
+        .btn-whatsapp:hover { background: #128C7E; transform: translateY(-2px); }
+        .footer { font-size: 0.8em; color: #999; margin-top: 20px; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="badge">ECO-FRIENDLY & STEAM CLEANING</div>
+        <div class="logo-text">North Aurora <br>Eco Clean Tech</div>
+        <p style="color: #666;">Professional Cleaning Services in Edmonton, AB</p>
+        
+        <div class="services">
+            <ul>
+                <li>Post-Construction Cleanup</li>
+                <li>Move-in / Move-out Services</li>
+                <li>Commercial & Office Cleaning</li>
+                <li>Deep Residential Cleaning</li>
+            </ul>
+        </div>
 
-<header>
-    <div class="badge-licensed">Fully Licensed & Insured</div>
-    <div class="logo-placeholder">AURORA</div>
-    <h1>Eco Clean Tech</h1>
-    <p class="subtitle">Modern Eco-Technological Cleaning Solutions in Edmonton</p>
-    <a href="https://wa.me/15879882021" class="btn">Request a Free Quote</a>
-</header>
-
-<div class="container">
-    <section id="servicios">
-        <h2 style="text-align:center;">Our Specialized Services</h2>
-        <div class="services">
-            <div class="card">
-                <h3>Residential</h3>
-                <p>Deep cleaning for homes, safe for children and pets.</p>
-            </div>
-            <div class="card">
-                <h3>Commercial</h3>
-                <p>Office and retail maintenance with advanced technology.</p>
-            </div>
-            <div class="card">
-                <h3>Post-Construction</h3>
-                <p>Detailed removal of dust and fine debris after renovations.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="contact-box">
-        <h2>Ready for a Spotless Space?</h2>
-        <p>Contact us directly via WhatsApp for a quick estimate.</p>
-        
-        <div style="margin: 20px 0;">
-            <strong>Business Number:</strong> 731452847<br>
-            <strong>Email:</strong> aurora.ecoclean.tech@gmail.com<br>
-            <strong>WhatsApp:</strong> 587-988-2021 (Messages Only)
-        </div>
-
-        <a href="https://wa.me/15879882021" class="btn" style="background-color: #25D366;">Send WhatsApp Message</a>
-    </section>
-</div>
-
-<footer>
-    &copy; 2026 Aurora Eco Clean Tech - Licensed in Edmonton, AB, Canada.
-</footer>
-
+        <p style="font-weight: bold; margin-bottom: 5px;">Contact us for a free estimate:</p>
+        <a href="https://wa.me/15879882021" class="btn-whatsapp">Send WhatsApp Message</a>
+        
+        <div class="footer">
+            Fully Licensed & Insured<br>
+            trianalixandra@gmail.com
+        </div>
+    </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
